@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Github Profile Search</title>
+</head>
+<body>
+  <main id="completed">
+    <form id="form" action="index.html" method="get" class="boxShadow">
+      <fieldset>
+        <strong><input type="text" id="user" value="Search username..."/></strong>
+        <button type="button" id="button" onclick="results()"><strong>Search</strong></button>
+      </fieldset>
+    </form>
+    <div id="results">
+      <div id="error">
+        Does not exist
+      </div>
+    </div>
+    <ul id="list">
+    </ul>
+  </main>
+</body>
+<!-- <script src="dist/bundle.js"></script> -->
+<script src="js/fetch.js"></script>
+</html>
